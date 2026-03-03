@@ -1,0 +1,8 @@
+# Ensure Windows batch scripts use CRLF in the working directory, LF in repo
+practice_springboot/practice_springboot2/mvnw.cmd text eol=lf
+
+#Explanation of the .gitattributes entry:
+
+#practice_springboot/practice_springboot2/mvnw.cmd: This specifies the path to the file.
+#text: This marks the file as a text file, meaning Git should manage its line endings.
+#eol=lf: This explicitly tells Git to store this file with LF line endings in the repository. When core.autocrlf=true (your likely setting on Windows), Git will then convert these LFs to CRLFs when checking out the file into your working directory, which is ideal for mvnw.cmd. This explicit setting will also typically suppress the warning
