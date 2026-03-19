@@ -1,24 +1,10 @@
-import { useEffect, useState} from 'react'
-
-import './App.css'
-
-
+import Hello from './Components/Hello.jsx'
+//import './App.css'
 function App() {
-  const [VALUE, setVALUE]= useState([]);
-
-  
-   useEffect(() => {
-    const fetchData = async() => { 
-            const res=await fetch('http://localhost:3000');
-            const data=await res.json();
-            console.log(data);
-    }
-    fetchData(); // Call the fetchData function here
-   }, []);
-  return (
-    <>
-    </>
-  )
+      return <div className="App">
+      <h1>Hello , we are Learning the react.js </h1>
+       <Hello name ="Tamilnilavan" message="hi there"/>
+      </div>
 }
 
 export default App
