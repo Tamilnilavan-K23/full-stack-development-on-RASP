@@ -12,10 +12,12 @@ public class PracticeSpringboot2Application {
 
 	@GetMapping("home")
 	public String func(){
+
 		return " this is home page ";
 	}  
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(PracticeSpringboot2Application.class, args);
 	}
 

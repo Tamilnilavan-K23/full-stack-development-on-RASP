@@ -9,6 +9,7 @@ public class Controller {
 
     @GetMapping("/users")
     public String Firstfunc(){
+
         return "hello this is spring boot project";
     }
 }
